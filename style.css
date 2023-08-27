@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Hind+Siliguri:wght@300&family=Kanit:wght@100&family=Poppins:wght@100;600&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+body{
+    background-color: #34495e;
+}
+.main{
+    width: 100% !important;
+    min-height: 100vh !important;
+    background-color: #34495e;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}   
+
+.box{
+    width: 350px;
+    height: 400px;
+    background-color: #ffffff ;
+    margin: 60px 30px 0px 30px ;
+}
+
+.tool{
+    background: rgb(21, 24, 26);
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+
+.tool i{
+    padding: 6px;
+    cursor: pointer;
+ }
+
+.box textarea{
+    background-color: transparent;
+    font-size: 20px;
+    color: #34495e;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.box textarea:focus{
+    border: none;
+    outline: none;
+}
+
+button {
+    position: fixed;
+    right: 10px;
+    top: 7px;
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+  }
+  
+  span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+  button::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+
+
+
+/* .shadow__btn {
+    position: fixed;
+    right: 20px;
+    top: 5px;
+    padding: 10px 20px;
+    border: none;
+     color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.9s;
+    transition-property: box-shadow;
+    cursor: pointer;
+  }
+  
+  .shadow__btn {
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+  }
+  
+  .shadow__btn:hover {
+    text-shadow: 0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff,
+                    0 0 20px #008cff,
+                     0 0 50px #008cff,
+                          0 0 100px #008cff;
+  } */
